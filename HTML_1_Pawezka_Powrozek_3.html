@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Najlepsi polscy komicy!</title>
-	<meta name = "description" context="Przed Tobą spis moich ulubionych polskich komików. Sprawdź, czy znasz ich wszystkich oraz ich programy. Ogrom śmiechu gwarantowany!"/>
-	<meta name="keywords" content="komicy, standup, najlepsi komicy, top komicy"/>
+	<title>Głosowanie</title>
+	<meta name = "description" content="Głosowanie na najlepszego stand-upera w naszym kraju"/>
+	<meta name="keywords" content="głosowanie, standup, polska, pacześ, lotek, van bendler"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	
 	<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
@@ -54,7 +54,6 @@
 			min-width: 300px;
 			margin-top: 25px;
 			margin-left: 25px;
-			
 		}
 		
 		#nav_button3
@@ -65,7 +64,6 @@
 			min-width: 300px;
 			margin-top: 25px;
 			margin-left: 25px;
-			
 		}
 		
 		#content
@@ -80,18 +78,20 @@
 			text-align: center;
 		}
 
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
 	</style>
-
-</head> 
-
+</head>
 
 <body>
-
 	<div id="container">
-	
 		<div id="logo">
 			<a href="HTML_1_Pawezka_Powrozek_1.html" title="Strona główna"> 
-				<img src="img/standup_banner.jpg" />
+				<img src="img/standup_banner.jpg" alt="Stand-up no limits baner"/>
 			</a>
 		</div>
 		
@@ -104,36 +104,59 @@
 			</div>
 			
 			<div id="nav_button2">
-				<a href="HTML_1_Pawezka_Powrozek_2.html" title="Strona główna">
+				<a href="HTML_1_Pawezka_Powrozek_2.html" title="Lista Programów">
 				<i class="icon-menu">
 				</i>
 				</a>
 			</div>
 			
 			<div id="nav_button3">
-				<a href="HTML_1_Pawezka_Powrozek_3.html" title="Strona główna">
+				<a href="HTML_1_Pawezka_Powrozek_3.html" title="Głosowanie">
 				<i class="icon-check">
 				</i>
 				</a>
 			</div>
-			
 		</div>
 	
 		<div id="content">
-		
-			<h1 align="center">Najlepsi komicy! - CHECKBOXY</h1>
-		
-		
+			<h1 align="center">Najlepsi komicy! - GŁOSOWANIE</h1>
+
+			<p style="font-size: 25px;">Aktualny wynik <a href="#głosowanie" style="text-decoration: none; color: blue">głosowania</a>:</p>
+
+			<ol style="font-size: 18px;">
+				<li>Rafał Pacześ &rarr; <b>(997 głosów)</b></li>
+				<li>Adam Van Bendler &rarr; <b>(666 głosów)</b></li>
+				<li>Łukasz Lotek Lodkowski &rarr; <b>(123 głosów)</b></li>
+			</ol>
+
+			<h2 style="text-align: center;">ZAGŁOSUJ I TY !!!</h2>
+
+			<img src="img/vote.jpg" class="center"/>
+
+			<p style="font-size: 25px;"> Oficjalne głosowanie 2019:</p>
+			<form>
+				<input type="radio" name="vote" value="pacześ" required> Rafał Pacześ<br>
+				<input type="radio" name="vote" value="lotek" required> Łukasz Lotek Lodkowski<br>
+				<input type="radio" name="vote" value="bendler" required> Adam Van Bendler<br>
+				<input type="text" name="email" required placeholder="Wpisz tutaj swój email..."><br>
+				<input type="submit" value="Zagłosuj">
+				<a id="głosowanie"></a>
+			</form>
 		</div>
 	
 		<div id="footer">
-			
-			Najlepsi stand-uperzy w Polsce! &copy; Wszelkie prawa zastrzeżone
-			
-		</div>
-	
-	</div>
+			<span>Najlepsi stand-uperzy w Polsce! &copy; Wszelkie prawa zastrzeżone</span>
+			<p><a href="HTML_1_Pawezka_Powrozek_4.html" style="text-decoration: none">Niepowtarzalny Formularz</a></p>
 
+			<div>
+				<a href="interviews/wywiad_paczes.txt" download="Pacześ najnowszy wywiad" style="color:darkgoldenrod"><span style="float: left">&nbsp;&nbsp;&nbsp;&nbsp;Pobierz najnowszy wywiad z Paczesiem!&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+				<a href="interviews/wywiad_lotek.txt" download="Lotek najnowszy wywiad" style="color:darkgoldenrod"><span style="float: left">&nbsp;&nbsp;&nbsp;&nbsp;Pobierz najnowszy wywiad z Lotkiem!&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+				<a href="interviews/wywiad_van_bendler.txt" download="Van Bendler najnowszy wywiad" style="color:darkgoldenrod"><span style="float: left">Pobierz najnowszy wywiad z Van Bendlerem!</span></a>
+			</div>
+			<br/>
+			<p>Skontaktuj się z nami mailowo klikając <a href="mailto:strona@standup.pl">tutaj</a></p>
+		</div>
+	</div>
 </body>
 
 
