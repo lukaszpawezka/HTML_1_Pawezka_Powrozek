@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Lista programów</title>
-	<meta name="description" content="Trzy najlepsze programy najlepszych komików w Polsce!"/>
-	<meta name="keywords" content="komicy, standup, najlepszy, program, najlepsi komicy, top komicy"/>
+	<title>Formularz</title>
+	<meta name = "description" content="Formularz dający ci szansę spotania z ulubionym stand-uperem"/>
+	<meta name="keywords" content="spotkanie, pacześ, lotek, van bendler, formularz, standup, polska"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	
 	<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
@@ -77,6 +77,13 @@
 			background-color: lightgray;
 			text-align: center;
 		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
 	</style>
 </head>
 
@@ -112,31 +119,30 @@
 		</div>
 	
 		<div id="content">
-			<h1 align="center">Lista programów</h1>
+			<h1 align="center">Niepowtarzalny Formularz</h1>
 
-			<ol style="font-size: 20px;">
-				<li>Rafał Pacześ
-					<ul>
-						<li><a href="https://www.youtube.com/watch?v=M4ANTgkixNE" target="_blank">Zaczynam Rozumieć</a></li>
-						<li><a href="https://www.youtube.com/watch?v=oPsvA3k2EWM" target="_blank">Puder Do Cery Zimnej</a></li>
-						<li><a href="https://www.youtube.com/watch?v=i8OYerdcmCc" target="_blank">Bang 2018</a></li>
-					</ul>
-				</li>
-				<li>Łukasz Lotek Lodkowski
-					<ul>
-						<li><a href="https://www.youtube.com/watch?v=5e-VG0WnQww" target="_blank">W Punkt</a></li>
-						<li><a href="https://www.youtube.com/watch?v=LViK-9GYfWo" target="_blank">Bang 2018</a></li>
-						<li><a href="https://www.youtube.com/watch?v=OGyqn5TrX1c" target="_blank">Poidełka</a></li>
-					</ul>
-				</li>
-				<li>Adam Van Bendler
-					<ul>
-						<li><a href="https://www.youtube.com/watch?v=4cQ3HYdZhvo&t=1s" target="_blank">Strach na wróble</a></li>
-						<li><a href="https://www.youtube.com/watch?v=gh_CkGmNGIQ" target="_blank">Laptop dla Janusza</a></li>
-						<li><a href="https://www.youtube.com/watch?v=IS83CZ_h82k" target="_blank">Pirackie kasety</a></li>
-					</ul>
-				</li>
-			</ol>
+			<div>
+				<span style="float: left; font-size: 18px;">Z którym stand-uperem chciałbyś się spotkać?&nbsp;&nbsp;</span>
+				<select name="wybór"; style="float: left";>
+					<option>Rafał Pacześ</option>
+					<option>Łukasz Lotek Lodkowski</option>
+					<option>Adam Van Bendler</option>
+				</select>
+			</div>
+
+			<form>
+				<div style="clear: both";>
+					<input type="text" name="name" placeholder="Imię" required><br>
+					<input type="text" name="surnname" placeholder="Nazwisko" required><br>
+					<input type="text" name="email" placeholder="Email" required><br>
+					<textarea maxlength="200" rows="3" cols="70" placeholder="Maksymalna długość wiadomości - 200 znaków" required></textarea>
+				</div>
+
+				<div>
+					<input type="reset" value="Wyczyść formularz">
+					<input type="submit" value="Wyślij formularz">
+				</div>
+			</form>
 		</div>
 	
 		<div id="footer">
@@ -153,6 +159,5 @@
 		</div>
 	</div>
 </body>
-
 
 </html>
